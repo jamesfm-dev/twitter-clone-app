@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <main>
+        <CssBaseline />
         <Component {...pageProps} />
       </main>
     </>
