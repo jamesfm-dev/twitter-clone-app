@@ -1,7 +1,13 @@
-import React from "react";
+import FeatureSidebarMobile from "./FeatureSidebarMobile";
+import FeatureSidebarDesktop from "./FeatureSidebarDesktop";
 
 export const FeatureSidebar = () => {
-  return <div>Feat Sidebar</div>;
+  return (
+    <>
+      <FeatureSidebarDesktop />
+      <FeatureSidebarMobile />
+    </>
+  );
 };
 
 export default FeatureSidebar;
