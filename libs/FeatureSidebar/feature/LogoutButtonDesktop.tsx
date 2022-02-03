@@ -25,7 +25,18 @@ const LogoutButtonDesktop = (props: LogoutButtonDesktopProps) => {
           <Grid item>
             <LogoutAvatar userName={userName} src={src} />
           </Grid>
-          <Grid item>
+          <Grid
+            item
+            sx={{
+              display: {
+                xs: "none",
+                sm: "none",
+                md: "none",
+                lg: "block",
+                xl: "block",
+              },
+            }}
+          >
             <Stack
               direction="column"
               justifyContent="center"
@@ -38,7 +49,18 @@ const LogoutButtonDesktop = (props: LogoutButtonDesktopProps) => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item>
+      <Grid
+        item
+        sx={{
+          display: {
+            xs: "none",
+            sm: "none",
+            md: "none",
+            lg: "block",
+            xl: "block",
+          },
+        }}
+      >
         <MoreHorizIcon sx={{ color: "#d9d9d9" }} />
       </Grid>
     </Grid>
