@@ -1,60 +1,15 @@
 import Container from "@mui/material/Container";
 import { useRouter } from "next/router";
 import Grid from "@mui/material/Grid";
-import IconHome from "../ui/IconHome";
-import IconExplore from "../ui/IconExplore";
-import IconNotification from "../ui/IconNotification";
-import IconMessages from "../ui/IconMessages";
-import IconBookmarks from "../ui/IconBookmarks";
-import IconLists from "../ui/IconLists";
-import IconProfile from "../ui/IconProfile";
 import ButtonTweet from "../ui/ButtonTweet";
 import ButtonTweetMobile from "../ui/ButtonTweetMobile";
 import SidebarLink from "../ui/SidebarLink";
 import TwitterLogo from "../../../components/TwitterLogo";
 import Link from "../../../components/Link";
+import SidebarLinks from "../data-access/SidebarLinks/SidebarLinks";
 
 const FeatureSidebarDesktop = () => {
   const route = useRouter();
-
-  const sidebarLinks: (string | JSX.Element)[][] = [
-    [
-      "Home",
-      <IconHome key={"IconHome"} />,
-      <IconHome key={"IconHomeActive"} active />,
-    ],
-    [
-      "Explore",
-      <IconExplore key={"IconExplore"} />,
-      <IconExplore key={"IconExploreActive"} active />,
-    ],
-    [
-      "Notifications",
-      <IconNotification key={"IconNotification"} />,
-      <IconNotification key={"IconNotificationActive"} active />,
-    ],
-    [
-      "Messages",
-      <IconMessages key={"IconMessages"} />,
-      <IconMessages key={"IconMessagesActive"} active />,
-    ],
-    [
-      "Bookmarks",
-      <IconBookmarks key={"IconBookmarks"} />,
-      <IconBookmarks key={"IconBookmarksActive"} active />,
-    ],
-    [
-      "Lists",
-      <IconLists key={"IconLists"} />,
-      <IconLists key={"IconListsActive"} active />,
-    ],
-    [
-      "Profile",
-      <IconProfile key={"IconProfile"} />,
-      <IconProfile key={"IconProfileActive"} active />,
-    ],
-  ];
-
   return (
     <Container
       sx={{
@@ -75,7 +30,7 @@ const FeatureSidebarDesktop = () => {
             <TwitterLogo />
           </Link>
         </Grid>
-        {sidebarLinks.map((links, i) => (
+        {SidebarLinks.map((links, i) => (
           <Grid item key={i}>
             <Link
               href={{
