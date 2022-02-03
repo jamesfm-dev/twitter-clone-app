@@ -18,7 +18,6 @@ const FeatureSidebarDesktop = () => {
         pt: 2,
         px: 2,
         display: { xs: "none", sm: "block", md: "block", lg: "block" },
-        width: "275px",
         height: "100vh",
         borderRight: "#2d2d2d 1px solid",
       }}
@@ -54,7 +53,7 @@ const FeatureSidebarDesktop = () => {
                   container
                   spacing={3}
                   direction="row"
-                  justifyContent="flex-start"
+                  justifyContent="center"
                   alignItems="center"
                 >
                   <Grid item>
@@ -93,7 +92,7 @@ const FeatureSidebarDesktop = () => {
           <Grid
             item
             sx={{
-              width: "100%",
+              width: "250px",
               display: {
                 xs: "none",
                 sm: "none",
