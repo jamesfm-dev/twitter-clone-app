@@ -5,6 +5,7 @@ import IconHome from "../ui/IconHome";
 import IconExplore from "../ui/IconExplore";
 import IconNotification from "../ui/IconNotification";
 import IconMessages from "../ui/IconMessages";
+import ButtonTweetMobile from "../ui/ButtonTweetMobile";
 import Link from "../../../components/Link";
 
 const FeatureSidebarMobile = () => {
@@ -69,6 +70,21 @@ const FeatureSidebarMobile = () => {
           underline="none"
         >
           <IconMessages active={route.pathname.substring(1) === "messages"} />
+        </Link>
+        <Link
+          href={{
+            pathname: `/compose/tweet`,
+          }}
+          underline="none"
+          sx={{
+            position: "absolute",
+            zIndex: 1,
+            top: -80,
+            right: 20,
+            margin: "0 auto",
+          }}
+        >
+          <ButtonTweetMobile />
         </Link>
       </Toolbar>
     </AppBar>
