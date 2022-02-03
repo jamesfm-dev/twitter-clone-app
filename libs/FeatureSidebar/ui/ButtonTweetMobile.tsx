@@ -1,26 +1,23 @@
-import Button, { ButtonProps } from "@mui/material/Button";
 import IconTweet from "./IconTweet";
+import Fab, { FabProps } from "@mui/material/Fab";
 
-const ButtonTweetMobile = ({ href }: ButtonProps) => {
+const ButtonTweetMobile = ({ href }: FabProps) => {
   return (
-    <Button
+    <Fab
       href={href}
-      fullWidth={true}
       disableRipple={true}
-      size="large"
-      disableElevation
+      size="medium"
       sx={{
+        left: -5,
         backgroundColor: "#1D9BF0",
-        height: 60,
         textTransform: "none",
-        borderRadius: "50%",
         "&:hover": {
           backgroundColor: "#1A8CD8",
         },
       }}
     >
       <IconTweet />
-    </Button>
+    </Fab>
   );
 };
 
