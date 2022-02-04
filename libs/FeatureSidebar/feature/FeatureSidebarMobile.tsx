@@ -8,7 +8,7 @@ import IconMessages from "../ui/IconMessages";
 import ButtonTweetMobile from "../ui/ButtonTweetMobile";
 import Link from "../../../components/Link";
 
-const FeatureSidebarMobile = () => {
+export const FeatureSidebarMobile = () => {
   const route = useRouter();
 
   return (

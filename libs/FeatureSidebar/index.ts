@@ -1,1 +1,2 @@
-export * from "./feature/FeatureSidebar";
+export * from "./feature/FeatureSidebarDesktop";
+export * from "./feature/FeatureSidebarMobile";
